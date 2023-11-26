@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-5 m-auto ">
+            
+            <form method="post" action="/signup/" class="mt-5">
+
+                <h3 class="text-center mb-4">Signup</h3>
+
+                {{#if userExists}}
+                    <h5 class="text-center mb-4 p-2" style="background-color: aqua;">{{userExists}}</h5>
+                {{/if}}
+                
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example1">User name</label>
+                    <input type="text" value="Srirag" name="name" class="form-control" />
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example1">Email address</label>
+                    <input type="email" value="srirag@google.com" name="email" class="form-control" />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example2">Password</label>
+                    <input type="password" value="abc123" name="password" class="form-control" />
+                </div>
+
+                <input type="submit" value="Sign up" class="btn-primary float-right">
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                    <p>Already a member? <a href="/login/">Login</a></p>   
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<style>
+  form{
+    padding: 55px;
+    background-color:beige;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+</style>
+
